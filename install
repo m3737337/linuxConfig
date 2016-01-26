@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "" >> ~/.bashrc
+echo "export PATH=\$PATH:/home/huyayun/bin" >> ~/.bashrc
+
+cp ./.gitconfig ~
+cp ./.vimrc ~
+cp -rf ./bin ~
