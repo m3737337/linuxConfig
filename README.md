@@ -1,0 +1,2 @@
+# linuxConfig
+config for linux
