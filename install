@@ -1,7 +1,16 @@
 #!/bin/sh
-echo "" >> ~/.bashrc
-echo "export PATH=\$PATH:/home/huyayun/bin" >> ~/.bashrc
+
+echo "start install..."
+set -x
+echo $HOME
+rm $HOME/.vimrc -rf
+rm $HOME/.vim -rf
+cp _vimrc $HOME/.vimrc -rf
+cp _vim  $HOME/.vim  -rf
+#cp _bashrc $HOME/.bashrc  -rf
+echo "" >> $HOME/.bashrc
+echo "PATH=$PATH:$HOME/bin" >> ~/.bashrc
 
 cp ./.gitconfig ~
-cp ./.vimrc ~
 cp -rf ./bin ~
+echo "install success"
