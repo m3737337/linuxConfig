@@ -3,3 +3,4 @@ set -x
 cp ~/.gitconfig .
 cp ~/.vimrc .
 cp -rf ~/bin .
+echo test
